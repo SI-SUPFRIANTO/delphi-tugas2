@@ -1,0 +1,196 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 322
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Line1: TLine
+    LineType = Diagonal
+    Position.X = 16.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Nama'
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 424.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NIM :'
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 400.000000000000000000
+    Text = 'SUPFRIANTO'
+    TabOrder = 4
+  end
+  object Label6: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 424.000000000000000000
+    Text = '160250501050'
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NILAI ABSEN'
+    TabOrder = 11
+  end
+  object Label5: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NILAI TUGAS'
+    TabOrder = 9
+  end
+  object Label7: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NILAI MID'
+    TabOrder = 8
+  end
+  object Label8: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NILAI UAS'
+    TabOrder = 6
+  end
+  object Label9: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'NILAI AKHIR'
+    TabOrder = 7
+  end
+  object Label10: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Grade (A/B/C/D/E)'
+    TabOrder = 5
+  end
+  object Absen: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Position.X = 176.000000000000000000
+    Position.Y = 48.000000000000000000
+  end
+  object Tugas: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 13
+    Position.X = 176.000000000000000000
+    Position.Y = 80.000000000000000000
+  end
+  object Mid: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 14
+    Position.X = 176.000000000000000000
+    Position.Y = 112.000000000000000000
+  end
+  object Uas: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 15
+    Position.X = 176.000000000000000000
+    Position.Y = 144.000000000000000000
+  end
+  object nAkhir: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 16
+    Position.X = 176.000000000000000000
+    Position.Y = 248.000000000000000000
+    Enabled = False
+  end
+  object Grade: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 17
+    Position.X = 176.000000000000000000
+    Position.Y = 280.000000000000000000
+    Enabled = False
+  end
+  object hitung: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    Text = 'Hitung'
+    OnClick = hitungClick
+  end
+  object hapus: TButton
+    Position.X = 48.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = 'Hapus'
+    OnClick = hapusClick
+  end
+  object keluar: TButton
+    Position.X = 176.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'keluar'
+    OnClick = KeluarClick
+  end
+  object Line2: TLine
+    LineType = Diagonal
+    Position.X = 16.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Line3: TLine
+    LineType = Diagonal
+    Position.X = 16.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label11: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'KONTRAK KULIAH'
+    TabOrder = 10
+  end
+end
